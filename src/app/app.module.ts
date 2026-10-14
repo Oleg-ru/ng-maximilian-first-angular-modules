@@ -3,14 +3,12 @@ import { App } from './app';
 import { BrowserModule } from '@angular/platform-browser';
 import { Header } from '../components/header/header';
 import { User } from '../components/user/user';
-import { Tasks } from '../components/tasks/tasks';
-import { NewTask } from '../components/tasks/new-task/new-task';
-import { Task } from '../components/tasks/task/task';
 import { FormsModule } from '@angular/forms';
+import { TasksModule } from '../components/tasks/tasks.module';
 
 @NgModule({
-  declarations: [App, Header, User, Tasks, NewTask, Task],
+  declarations: [App, Header, User],
   bootstrap: [App],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, TasksModule],
 })
 export class AppModule {}
