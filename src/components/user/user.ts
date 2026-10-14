@@ -1,8 +1,8 @@
-import { Component, EventEmitter, Input, input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { UserType } from './user.model';
 
 @Component({
-  imports: [],
+  standalone: false,
   selector: 'app-user',
   styleUrl: './user.css',
   templateUrl: './user.html',

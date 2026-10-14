@@ -1,9 +1,8 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { NewTaskType } from '../task.module';
 
 @Component({
-  imports: [FormsModule],
+  standalone: false,
   selector: 'app-new-task',
   styleUrl: './new-task.css',
   templateUrl: './new-task.html',

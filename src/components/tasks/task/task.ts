@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { TaskType } from '../task.module';
 
 @Component({
-  imports: [],
+  standalone: false,
   selector: 'app-task',
   styleUrl: './task.css',
   templateUrl: './task.html',
