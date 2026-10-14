@@ -1,12 +1,9 @@
-import {Component, signal} from '@angular/core';
-import {Header} from '../components/header/header';
-import {User} from '../components/user/user';
+import {Component} from '@angular/core';
 import {DUMMY_USERS} from '../components/user/dummy-users';
-import {Tasks} from "../components/tasks/tasks";
 
 @Component({
-  imports: [Header, User, Tasks],
   selector: 'app-root',
+  standalone: false,
   styleUrl: './app.css',
   templateUrl: './app.html',
 })
